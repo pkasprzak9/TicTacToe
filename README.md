@@ -15,7 +15,7 @@ Ruby (2.0 or higher)
 
 - Clone the repository: git clone https://github.com/pkasprzak9/Tic-Tac-Toe.git
 
-- cd tic-tac-toe
+- cd tic_tac_toe
 
 - Run the game: ruby game.rb
 
