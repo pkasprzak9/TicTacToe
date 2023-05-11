@@ -1,6 +1,5 @@
 # frozen_string_literal: false
 
-require 'pry-byebug'
 require './board'
 require './player'
 
