@@ -26,7 +26,6 @@ Ruby (2.0 or higher)
 - When the game ends, you will be asked if you want to play again.
 
 
-**TODO List**
 
 
 
