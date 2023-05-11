@@ -27,22 +27,27 @@ class Game
     end
   end
 
+  # Runs the game loop where players take turns making a move until a winner or
+  # a full board is reached, checks for a winner after each move, declares a
+  # tie game if there is no winner and the board is full, and prints the name
+  # of the winner, if there is one.
   def play_game
     winner = nil
-    until winner || @board.full?
+    until winner
       @players.each do |player|
         puts "#{player.name}'s turn:"
         choice = gets.chomp.to_i
         player.make_a_move(choice)
         winner = @board.check_win(player)
         break if winner
+
+        if @board.full?
+          puts "It's a tie!"
+          return
+        end
       end
     end
-    if winner
-      puts "#{winner.name} wins!"
-    else
-      puts "It's a tie!" if @board.full?
-    end
+    puts "#{winner.name} wins!"
   end
 
   # Asks the user if he wants to play again. If so, then
