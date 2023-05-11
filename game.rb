@@ -20,8 +20,10 @@ class Game
     @players.each_with_index do |player, index|
       puts "Enter a name for player #{index + 1}:"
       player.name = gets.chomp
-      puts "Choose a weapon for player #{index + 1}:"
-      player.weapon = gets.chomp
+      until player.weapon == 'x' || player.weapon == 'o'
+        puts "Choose a weapon ('x' or 'o') for player #{index + 1}:"
+        player.weapon = gets.chomp
+      end
     end
   end
 
