@@ -1,11 +1,10 @@
 # Tic-Tac-Toe
 
-
-**Introduction**
+#**Introduction**
 
 This is a Ruby implementation of the popular game 'Tic Tac Toe'. The game can be played between two players on a terminal.
 
-<p align="center">
+<p align="center" margin-top: 20px>
   <img src="https://github.com/pkasprzak9/TicTacToe/assets/81309180/8727de0a-82e1-4726-b409-8e70f55cb022" alt="screenshot of the game"/>
 </p>
 **Requirements**
