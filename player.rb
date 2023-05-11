@@ -14,7 +14,7 @@ class Player
   end
 
   # Allows players to make a move on the board
-  def make_a_move(position)
-    @board.set_value(@weapon, position)
+  def make_a_move
+    @board.change_value(@weapon)
   end
 end

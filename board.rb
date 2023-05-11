@@ -24,9 +24,14 @@ class Board
 
   # Takes as input a value (X or O) and a position for the
   # letter. Then changing value at chosen position in the board.
-  def set_value(value, position)
-    row, column = (position - 1).divmod(3)
-    @board[row][column] = value
+  def change_value(value)
+    loop do
+      puts 'Select an empty place on the board (1-9): '
+      choice = gets.chomp.to_i
+      @row, @column = (choice - 1).divmod(3)
+      break if @board[@row][@column] == ' '
+    end
+    @board[@row][@column] = value
     display_board
   end
 

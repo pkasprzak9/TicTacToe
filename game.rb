@@ -18,10 +18,10 @@ class Game
     @board.display_board
     @players = [Player.new(@board), Player.new(@board)]
     @players.each_with_index do |player, index|
-      puts "Enter a name for player #{index + 1}:"
+      puts "Enter a name for player #{index + 1}: "
       player.name = gets.chomp
       until player.weapon == 'x' || player.weapon == 'o'
-        puts "Choose a weapon ('x' or 'o') for player #{index + 1}:"
+        puts "Choose a weapon ('x' or 'o') for player #{index + 1}: "
         player.weapon = gets.chomp
       end
     end
@@ -35,9 +35,8 @@ class Game
     winner = nil
     until winner
       @players.each do |player|
-        puts "#{player.name}'s turn:"
-        choice = gets.chomp.to_i
-        player.make_a_move(choice)
+        puts "#{player.name}'s turn!"
+        player.make_a_move
         winner = @board.check_win(player)
         break if winner
 
@@ -53,7 +52,7 @@ class Game
   # Asks the user if he wants to play again. If so, then
   # calls 'new_game' function, otherwise prints the goodbye message.
   def end_game
-    puts 'Would you like to play again?'
+    puts 'Would you like to play again? '
     answer = gets.chomp
     if answer == 'yes'
       new_game
