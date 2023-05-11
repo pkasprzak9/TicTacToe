@@ -28,7 +28,6 @@ Ruby (2.0 or higher)
 
 **TODO List**
 
-- Prevent players from selecting the incorrect weapon.
 - Add functionality to disallow players from overriding places on the board.
 
 
