@@ -5,7 +5,9 @@
 
 This is a Ruby implementation of the popular game 'Tic Tac Toe'. The game can be played between two players on a terminal.
 
-
+<p align="center">
+  <img src="https://github.com/pkasprzak9/TicTacToe/assets/81309180/8727de0a-82e1-4726-b409-8e70f55cb022" alt="screenshot of the game"/>
+</p>
 **Requirements**
 
 Ruby (2.0 or higher)
@@ -24,9 +26,6 @@ Ruby (2.0 or higher)
 - Choose a position on the board when prompted to make a move during your turn.
 
 - When the game ends, you will be asked if you want to play again.
-
-
-
 
 
 **Class Details**
