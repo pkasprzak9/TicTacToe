@@ -30,7 +30,7 @@ class Board
     display_board
   end
 
-  # Check if there's a winner.
+  # Checks if there's a winner.
   def check_win(player)
     player_positions = []
     @board.flatten.each_with_index do |value, index|
